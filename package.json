@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "json-server": "json-server --watch db.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "(set CHROME_BIN='C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe') && (ng test)",
+    "lint": "eslint . --ext .ts"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +20,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "json-server": "^0.17.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -27,6 +30,9 @@
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.48.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
